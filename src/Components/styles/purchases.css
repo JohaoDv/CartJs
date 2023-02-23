@@ -1,0 +1,100 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.total {
+  display: flex;
+  margin-top: 10px;
+}
+.total button {
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  margin-left: 15px;
+}
+.total :nth-child(2) {
+  color: #fff;
+  background-color: #9695b3;
+}
+.total :nth-child(3) {
+  background-color: #0d8518;
+  color: #fff;
+}
+.only-product {
+  display: flex;
+  background-color: #ffffff;
+  padding: 25px;
+  margin: 10px 0;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  align-items: center;
+}
+.content-image img {
+  width: 300px;
+  height: 300px;
+}
+.description {
+  border-left: 1px solid darkgray;
+  padding-left: 20px;
+  margin-left: 30px;
+}
+.buttons{
+ display: inline-flex;
+}
+.description button {
+  background-color: #da0000;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 4px 15px;
+}
+.buy-button button{
+  background-color: green;
+  padding: 2px 52px;
+}
+.description h2 {
+  padding: 10px;
+}
+.description div {
+  padding: 10px;
+}
+.amount {
+  display: inline-block;
+}
+.amount span button {
+  color: #000;
+  background-color: #f9fafc;
+  padding: 2px 7px;
+  border: 1px solid darkgray;
+}
+@media only screen and (max-width: 800px) {
+  .only-product {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .description {
+    border-top: 1px solid darkgrey;
+    border-left: none;
+    margin: 30px 0 0 0;
+    padding: 20px 0 0 0;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .empty img {
+    width: 340px;
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .total button {
+    padding: 0 15px;
+  }
+  .total h2{
+    width: 150px;
+  }
+}
